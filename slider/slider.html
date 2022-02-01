@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #picture{
+            width: 400px;
+        }
+        .container{
+            padding-top: 250px;
+            display: flex;
+            justify-content: center;
+        }
+        #btn{
+            background-color:cornsilk;
+            color: dimgray;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <button id="btn" onclick="back('picture')"><</button>
+    <img id="picture" src="img/1img.jpg"> 
+    <button id="btn" onclick="next('picture')">></button>
+    </div>
+   <script src="slider.js"></script>
+    </script>
+</body>
+</html>

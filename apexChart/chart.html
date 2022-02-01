@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<body>
+    <div id="chart"></div>
+    <script>
+        var options = {
+    series: [{
+    name: 'Агломерат ЗСМК крупный',
+    data: [23.9, 26.2, 27.2, 27.3, 27.4, 26.9],
+   
+  }, {
+    name: 'Агломерат ЗСМК мелкий',
+    data: [43.2,42.8, 43.8,43.9 , 44.3, 43.3]
+  }, {
+    name: 'Агломерат складской',
+    data: [8.8 , 16.9, 16.6, 16.4,16.8, 30.9]
+  },
+  {
+    name: 'Окатыши  карельские НО',
+    data: [17.7 , 16.3, 13.8, 13.6,13.5, 14.4]
+  },
+],
+    chart: {
+    type: 'bar',
+    // height: 350,
+    stacked: true,
+    // stackType: '100%'
+  },
+  responsive: [{
+    breakpoint: 480,
+    options: {
+      legend: {
+        position: 'bottom',
+        offsetX: -10,
+        offsetY: 0
+      }
+    }
+  }],
+  xaxis: {
+    categories: ['2021-05-04Е09:50:20', '2021-05-04T10:30:40', '2021-05-04T11:05:52', '2021-05-04T11:44:28', '2021-05-04T12:26:10', '2021-05-04T13:01:01'
+    ],
+  },
+  fill: {
+    opacity: 1
+  },
+  legend: {
+    position: 'bottom',
+    offsetX: 0,
+    offsetY: 5
+  },
+  };
+
+   var chart = new ApexCharts(document.querySelector("#chart"), options);
+   chart.render();
+    </script>
+</body>
+</html>

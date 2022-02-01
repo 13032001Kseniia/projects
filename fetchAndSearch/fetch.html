@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="fetch.css">
+    
+</head>
+<body>
+  
+  <div id="app">
+    <header class="head"> 
+      VALUTE
+    </header>
+    
+    <main>
+        <form name="form"  action="#"  @submit.prevent="filter">
+            <input id="input" class="input_fil" type="text" placeholder="input data" v-model="search">
+           <button type="submit" class="btn">Search</button>
+          
+        </form>
+    <div class="backet_container">
+    <div  class="container_valute" v-for="el in goods">
+      <div id="backet" class="valute"> 
+        <h1 class="name_valute">{{el.Name}}</h1>
+        <h1 class="char_valute">{{ el.CharCode}}</h1> 
+        <h2 class="price_valute">{{el.Value}}</h2></div>
+    </div>
+  </div>
+    </main>
+</div>
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!-- <script defer src="fetch.js"></script> -->
+<script src="fetch.js"></script>
+</body>
+</html>

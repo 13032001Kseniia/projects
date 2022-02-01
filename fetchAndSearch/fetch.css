@@ -1,0 +1,68 @@
+
+.head{
+    
+    background: black;
+    color: aliceblue;
+    font-size: 90px;
+    text-align: center;
+    
+    
+}
+.backet_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ /* .container_valute{
+    display: flex;
+    justify-content: space-around; 
+     flex-wrap: wrap;
+    
+} */
+.valute{
+    width: 300px;
+    height: 250px;
+    
+    border: 3px solid black;
+    box-shadow: 5px 5px gray;
+    margin-bottom:50px;
+}
+.name_valute{
+    font-size: 25px;
+    color: black;
+    text-align: center;
+}
+.char_valute{
+    font-size: 20px;
+    color: darkgrey;
+    text-align: center;
+}
+.price_valute{
+    font-size: 25px;
+    color: dimgray;
+    text-align: center;
+}
+.input_fil{
+    outline: none;
+    border: none;
+    border-bottom: 3px solid black;
+    
+}
+form{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: end;
+}
+.btn{
+    border-radius: 10px;
+    background-color: gray;
+    color: honeydew;
+
+}
+input:hover{
+    cursor: pointer;
+}
+#backet{
+   margin-right: 80px;
+   margin-left: 100px;
+}

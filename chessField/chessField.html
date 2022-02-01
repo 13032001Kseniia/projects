@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <div></div>
+    <script type="text/javascript">
+   //var number=["1","2","3","4","5","6","7","8"];
+   var number=[1,2,3,4,5,6,7,8];
+   var alf=["A","B","C","D","E","F","G","H"];
+   var arrPW=["&#9817;","&#9817;","&#9817;","&#9817;","&#9817;","&#9817;","&#9817;","&#9817;"];
+   var arrPB=["&#9823;","&#9823;","&#9823;","&#9823;","&#9823;","&#9823;","&#9823;","&#9823;"];
+   var matrixB=["&#9820;","&#9822;","&#9821;","&#9819;","&#9818;","&#9821;","&#9822;","&#9820;"];
+   var matrixW=["&#9814;","&#9816;","&#9815;","&#9813;","&#9812;","&#9815;","&#9816;","&#9814;"];
+      var table =document.createElement("table");
+      
+        for(var i=0;i<10;i++){
+            var tr=document.createElement("tr");
+           
+            table.append(tr);
+            for(var j=0;j<10;j++){
+            var td=document.createElement("td");
+            td.style.background="white";
+           
+            if(((i+j)%2==0)&&i>0&&i<9 && j>0 && j<9){
+            td.style.height="50px";
+            td.style.width="50px";
+
+           td.style.background="red";
+            if( j>0 && i==1 && j<9)
+            td.innerHTML="<td style.color='white'>"+matrixB[j-1]+"</td>";
+            if(j>0 && i==8 && j<9 )
+            td.innerHTML="<td style.color='white'>"+matrixW[j-1]+"</td>";
+            if(j>0&&i==2&&j<9){
+            td.innerHTML="<td style.color='white'>"+arrPB[i]+"</td>";
+            }
+            if(j>0&&i==7&&j<9){
+            td.innerHTML="<td style.color='white'>"+arrPW[i]+"</td>";
+            
+        }  
+        if(j>0&&i==0&&j<9){
+            td.innerHTML="<td style.color='white'>"+alf[j]+"</td>";    
+        }  
+
+            }
+            else if(i>0&&i<9 && j>0 && j<9){
+                
+                td.style.height="50px";
+                td.style.width="50px";
+                td.style.background="gray";
+               
+                if( j>0 && i==1 && j<9)
+            td.innerHTML="<td style.color='white'>"+matrixB[j-1]+"</td>";
+            if(j>0 && i==8 && j<9 )
+            td.innerHTML="<td style.color='white'>"+matrixW[j-1]+"</td>";
+                if(j>0&&i==2&&j<9)
+            td.innerHTML="<td style.color='white'>"+arrPB[i]+"</td>";
+            if(j>0&&i==7&&j<9 )
+            td.innerHTML="<td style.color='white'>"+arrPW[i]+"</td>";
+            }
+            if(j>0&&i==0&&j<9){
+            td.innerHTML="<td style.color='white'>"+alf[j-1]+"</td>";    
+        }  
+        if(j>0&&i==9&&j<9){
+            td.innerHTML="<td style.color='white'>"+alf[j-1]+"</td>";    
+        } 
+        if(i>0&&j==0&&i<9){
+            td.innerHTML="<td style.color='white'>"+number[i-1]+"</td>";    
+        }  
+     number= number.reverse(); 
+     if(i>0&&j==9&&i<9){
+            td.innerHTML="<td style.color='white'>"+number[i-1]+"</td>";    
+        }  
+         
+        number= number.reverse(); 
+        
+            tr.append(td);
+            }
+        }
+        
+       
+
+
+document.querySelector("div").append(table);
+        
+
+    </script>
+</body>
+</html>

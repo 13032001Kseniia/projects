@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger</title>
+    <link rel="stylesheet" href="style_burger.css">
+</head>
+<body>
+    <script defer src="burger.js"></script>
+    <h1 class="head">Collect the burger</h1>
+    <p class="heading">Size</p>
+    <div class="burger">
+        <div>
+    <label for="">Small </label>
+   
+    <!--<div><img class="picture" src="https://s1.1zoom.ru/big7/671/Fast_food_Hamburger_Buns_401402.jpg"></div>-->
+    <input type="radio" name="size" value="Small" data-price="50" data-calories="20">
+    <div>price:50 calories:20</div>
+</div>
+<div>
+    
+    <label for="">Big </label>
+    <input type="radio" name="size"value="Big" data-price="100" data-calories="40">
+    <div>price:100 calories:40</div>
+    </div>
+</div>
+   <p class="heading">Stuffing</p>
+   <div class="burger">
+    <div>
+   <label for="">Cheese </label>
+   <input type="checkbox" name="stuffing" value="Cheese" data-price="10" data-calories="20">
+   <div>price:10 calories:20</div>
+   </div>
+   <div>
+   <label for="">Salad</label>
+   <input type="checkbox" name="stuffing" value="Salad" data-price="20" data-calories="5">
+   <div> price:20 calories:5</div>
+   </div>
+<div>
+   <label for="">Potato  </label>
+  
+   <input type="checkbox" name="stuffing" value="Potato" data-price="15" data-calories="10">
+   <div>price:15 calories:10</div>
+</div>
+</div>
+   <p class="heading">Topping</p>
+   <div class="burger">
+    <div>
+   <label for="">Flavoring </label>
+   <input type="checkbox" name="topping" value="Flavoring" data-price="15" data-calories="0">
+   <div>price:15 calories:0</div>
+</div>
+<div>
+   <label for="">Mayonnaise </label>
+   <input type="checkbox" name="topping" value="Mayonnaise" data-price="20" data-calories="5">
+   <div>price:20 calories:5</div>
+</div>
+</div> 
+   <div>
+   <button id="calc">Calculate</button>
+   <div class="total">
+   <p>Total price: <span class="total_price"></span></p>
+   <p>Total calories: <span class="total_calories"></span></p>
+</div>
+</div>
+<script type="text/javascript">
+    document.getElementById('calc').addEventListener('click',()=>{
+        let burger=new Hamburger('size','stuffing','topping');
+        burger.OutputTotal(".total_price",".total_calories");
+    });
+</script>
+</body>
+</html>

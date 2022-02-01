@@ -1,0 +1,33 @@
+body{
+    background:cornsilk ;
+}
+.picture{
+    width: 5%;
+}
+.heading{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: red;
+}
+.burger{
+   display: flex;
+   justify-content: space-around;
+}
+#calc{
+    background-color: springgreen;
+    color: blue;
+    padding: 10px;
+    margin-left: 50%;
+}
+.total{
+    display: flex;
+    justify-content: space-evenly;
+    color: rgb(0, 26, 255);
+    font-weight: bold;
+}
+.head{
+    font-size: 50px;
+    color: darkturquoise;
+    text-align: center;
+}

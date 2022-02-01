@@ -1,0 +1,50 @@
+.goods_list{
+    display: flex;
+    justify-content: space-around;
+}
+.goods_head{
+    font-size: 30px;;
+}
+.goods_price{
+    font-size: 20px;
+    font-weight: bold;
+}
+.cart_btn{
+    background-color: aqua;
+    width: 100%;
+    color: blue;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    
+}
+.cart_btn:hover{
+    cursor: pointer;
+}
+#backet_btn:hover{
+    cursor: pointer;
+}
+.goods_item{
+width: 20%;
+border: 5px solid greenyellow;
+text-align: center;
+}
+.backet{
+    background-color: greenyellow;
+    position: absolute;
+    width: 15%;
+    /* margin-left: 80%; */
+    border: 1px solid  gray;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+#backet_button:hover{
+    cursor: pointer;
+}
+.head{
+    background: #000;
+    color:aliceblue;
+    display: flex;
+    justify-content: space-around;
+}

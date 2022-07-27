@@ -1,0 +1,58 @@
+.heading {
+    background-color: darksalmon;
+    font-size: 40px;
+    display: flex;
+}
+
+.wrap {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    margin-top: 30px;
+    margin-left: 30px;
+    max-width: 200px;
+    display: block;
+    flex-direction: column;
+    border: 5px solid salmon;
+    background-color: antiquewhite;
+    box-shadow: 10px 10px palevioletred;
+}
+
+.btn {
+    background-color: coral;
+    border-radius: 3px;
+}
+
+.title {
+    font-size: 40px;
+    color: deeppink;
+}
+
+.text {
+    color: black;
+    max-width: 300px;
+    font-size: 20px;
+}
+
+.input {
+    border-radius: 10px;
+}
+
+.input:focus {
+    background-color: greenyellow;
+}
+
+.title2 {
+    padding-top: 60px;
+    color: deeppink;
+}
+
+.text_comment {
+    color: crimson;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
